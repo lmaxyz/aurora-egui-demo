@@ -1,0 +1,25 @@
+[package]
+name = "egui_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = { version = "0.30.0", default-features = false, features = [
+    "glow",
+    "default_fonts",
+    "wayland",
+    "accesskit",
+] }
+egui_extras = { version = "0.30.0", default-features = false, features = [
+    "image",
+] }
+
+env_logger = { version = "0.11.6", default-features = false, features = [
+    "auto-color",
+    "humantime",
+] }
+maliit-glib = { git = "https://github.com/auroraos-rs/maliit-glib" }
+
+[patch.crates-io]
+winit = { git = "https://github.com/lmaxyz/winit", branch = "aurora" }
+# wgpu = { git = "https://github.com/lmaxyz/wgpu", branch = "v23" }
