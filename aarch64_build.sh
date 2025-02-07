@@ -33,7 +33,7 @@ cp ./target/aarch64-unknown-linux-gnu/release/egui_demo ./com.lmaxyz.EguiAuroraE
 $SFDK_PATH config target="AuroraOS-5.1.2.10-base-aarch64"
 
 $SFDK_PATH build
-$SFDK_PATH engine exec -tt sb2 -t 'AuroraOS-5.1.2.10-base-aarch64' rpmsign-external sign -k $CURRENT_DIR/../.auroraos-regular-keys/regular_key.pem -c $CURRENT_DIR/../.auroraos-regular-keys/regular_cert.pem $CURRENT_DIR/RPMS/com.lmaxyz.EguiAuroraExample-0.1-1.aarch64.rpm
+$SFDK_PATH engine exec -tt sb2 -t 'AuroraOS-5.1.2.10-base-aarch64' rpmsign-external sign -k $CURRENT_DIR/../.auroraos-regular-keys/regular_key.pem -c $CURRENT_DIR/../.auroraos-regular-keys/regular_cert.pem $CURRENT_DIR/RPMS/com.lmaxyz.EguiAuroraExample-0.2-1.aarch64.rpm
 
 set +e
 
