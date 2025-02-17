@@ -22,4 +22,5 @@ maliit-glib = { git = "https://github.com/auroraos-rs/maliit-glib" }
 
 [patch.crates-io]
 winit = { git = "https://github.com/lmaxyz/winit", branch = "aurora" }
+glutin = { git = "https://github.com/lmaxyz/glutin", branch = "aurora_device_fix" }
 # wgpu = { git = "https://github.com/lmaxyz/wgpu", branch = "v23" }
