@@ -18,7 +18,7 @@ env_logger = { version = "0.11.6", default-features = false, features = [
     "auto-color",
     "humantime",
 ] }
-maliit = { git = "https://github.com/auroraos-rs/maliit-glib" }
+maliit = { git = "https://github.com/auroraos-rs/maliit" }
 
 [patch.crates-io]
 winit = { git = "https://github.com/lmaxyz/winit", branch = "aurora" }
