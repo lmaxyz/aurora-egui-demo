@@ -1,5 +1,5 @@
 use eframe::egui::{self};
-use maliit_glib::input_method::InputMethod;
+use maliit::input_method::InputMethod;
 
 
 fn main() -> eframe::Result {
@@ -54,10 +54,10 @@ impl eframe::App for MyApp {
                 let text_edit = ui.text_edit_singleline(&mut self.name)
                     .labelled_by(name_label.id);
                 if text_edit.clicked() {
-                    self.input_method.as_ref().map(|im| im.show_input_method());
+                    self.input_method.as_ref().map(|im| im.show());
                 }
                 if text_edit.lost_focus() {
-                    self.input_method.as_ref().map(|im| im.hide_input_method());
+                    self.input_method.as_ref().map(|im| im.hide());
                 }
             });
 

@@ -937,7 +937,7 @@ dependencies = [
  "eframe",
  "egui_extras",
  "env_logger",
- "maliit-glib",
+ "maliit",
 ]
 
 [[package]]
@@ -1774,9 +1774,9 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "04cbf5b083de1c7e0222a7a51dbfdba1cbe1c6ab0b15e29fff3f6c077fd9cd9f"
 
 [[package]]
-name = "maliit-glib"
+name = "maliit"
 version = "0.1.0"
-source = "git+https://github.com/auroraos-rs/maliit-glib#c300525131c5eda0a27ddc01941ba3dfb425d407"
+source = "git+https://github.com/auroraos-rs/maliit-glib#256c5d077219a944024d8e7acf487eb2425e2654"
 dependencies = [
  "dbus",
  "thiserror 2.0.11",
